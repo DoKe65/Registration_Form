@@ -347,7 +347,7 @@ template {
  * Remove default list styles, margins and padding.
  */
 
- ol, 
+ ol,
  ul {
   margin: 0;
   padding: 0;

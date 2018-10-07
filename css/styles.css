@@ -5,38 +5,157 @@
 }
 
 body {
-  font-family: "Old Standard TT" serif;
-  font-weight: 400;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
   color: #6a6868;
-  font-size: 1.2em;
   margin: 0;
 }
 
 h1,
 button {
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   margin: auto;
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
-h2 {
-  font-weight: 700;
+h2,
+legend {
+  font-weight: 600;
   color: #444;
+  font-size: 1.4em;
 }
 
+p,
+label,
+::placeholder,
+.copyright  {
+  font-size: 1.2em;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
 
 /* Header-Section */
 
 header {
   text-transform: uppercase;
   background-color: #444;
-  padding: 1em;
+  padding: 1.4em;
   text-align: center;
 }
 
 /* Main-Section */
 
 main {
-  padding: 0.5em;
+  padding: .8em .95em;
+}
+
+.form-head {
+  text-align: center;
+}
+
+.form-head h2 {
+  margin-bottom: 0.5em;
+}
+
+.hr-header {
+  height: 0.2em;
+  border-top: 4px solid #6a6868;
+  border-bottom: 2px solid #6a6868;
+  border-left: none;
+  border-right: none;
+}
+
+/* Form */
+
+form {
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 1.4em 0;
+  padding: 0;
+  border-bottom: 2px solid #6a6868;
+}
+
+fieldset:last-of-type {
+  border: none;
+}
+
+legend {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.textfield,
+#plz,
+textarea {
+  background-color: #eeee;
+  border: none;
+  width: 100%;
+  line-height: 3em;
+  border-radius: 5px;
+  padding: 0 1em;
+  margin-bottom: 1.4em;
+}
+
+::placeholder {
+  font-style: italic;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+select {
+  height: 3.3339em;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+#plz {
+  width: 50%;
+}
+
+.nl_text {
+  margin-bottom: 1em;
+}
+
+.newsletter {
+  display: inline-block;
+  margin-left: .5em;
+}
+
+.nl_text:not(:first-of-type) {
+  margin-top: 1em;
+}
+
+textarea {
+  margin-bottom: 0.8em;
+}
+
+button {
+  width: 100%;
+  background-color: #23ad80;
+  height: 3em;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-style: italic;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+
+  main {
+    width: 60%;
+    max-width: 620px;
+    margin: auto;
+  }
 }
