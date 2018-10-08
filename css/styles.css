@@ -9,6 +9,7 @@ body {
   font-weight: 300;
   color: #6a6868;
   margin: 0;
+  background-color: rgba(6, 236, 167, 0.13);
 }
 
 h1,
@@ -40,17 +41,13 @@ label,
 .textfield:focus,
 #plz:focus,
 #interests:focus {
-  transition: all 10s fade-in-out 10s;
+  /* transition: all 10s fade-in-out 10s; */
   background-color: rgba(35, 165, 173, 0.5);
   outline: none;
-  border: 1px solid rgb(35, 165, 173,1);
+  border-bottom: 4px solid rgba(35, 165, 173,1);
   color: white;
-}
-.textfield:hover,
-#plz:hover,
-#interests:hover {
-  border-bottom: 4px solid rgb(35, 165, 173,1);
-  transition: border-bottom .5s;
+  transition: border-bottom 0.5s 1s,
+              background-color 1s;
 }
 
 /* Header-Section */
@@ -114,7 +111,7 @@ label {
 .textfield,
 #plz,
 textarea {
-  background-color: #eeee;
+  background-color: #eee;
   border: none;
   width: 100%;
   line-height: 3em;
