@@ -22,7 +22,7 @@ button {
 h2,
 legend {
   font-weight: 600;
-  color: #444;
+  color: #353535;
   font-size: 1.4em;
 }
 
@@ -31,9 +31,26 @@ label,
 ::placeholder,
 .copyright  {
   font-size: 1.2em;
-  color: #999999;
+  color: #444;
   margin-top: 0;
   margin-bottom: 2em;
+
+}
+
+.textfield:focus,
+#plz:focus,
+#interests:focus {
+  transition: all 10s fade-in-out 10s;
+  background-color: rgba(35, 165, 173, 0.5);
+  outline: none;
+  border: 1px solid rgb(35, 165, 173,1);
+  color: white;
+}
+.textfield:hover,
+#plz:hover,
+#interests:hover {
+  border-bottom: 4px solid rgb(35, 165, 173,1);
+  transition: border-bottom .5s;
 }
 
 /* Header-Section */
@@ -49,6 +66,7 @@ header {
 
 main {
   padding: .8em .95em;
+  background-color: rgba(35, 165, 173, 0.42) ;
 }
 
 .form-head {
@@ -113,8 +131,6 @@ textarea {
 
 select {
   height: 3.3339em;
-  font-style: italic;
-  font-size: 0.9em;
 }
 
 #plz {
@@ -140,9 +156,10 @@ textarea {
 
 button {
   width: 100%;
-  background-color: #23ad80;
+  background-color: #23a5ad;
   height: 3em;
   border-radius: 5px;
+  border: none;
 }
 
 .copyright {
@@ -158,4 +175,29 @@ button {
     max-width: 620px;
     margin: auto;
   }
+
+  .contact label {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 3em;
+    padding-top: .7em;
+    margin-bottom: 1.4em;
+    margin-top: 0;
+    clear: both;
+  }
+
+  .textfield,
+  #plz {
+    display: inline-block;
+    float: right;
+    width: 75%;
+  }
+
+  #plz {
+    width: calc(75% / 3);
+    margin-right: calc(75% - 75% / 3);
+  }
+
+
 }
